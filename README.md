@@ -1,2 +1,3 @@
-# gcp-training
-Additional Resources for GCP Training
+# Resources for Google Training Courses
+
+- [Google Certified Pofessional Data Engineering]()
