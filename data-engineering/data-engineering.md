@@ -23,5 +23,5 @@
 - [This is not a real person](https://www.theverge.com/tldr/2019/2/15/18226005/ai-generated-fake-people-portraits-thispersondoesnotexist-stylegan)
 - [NVIDIA GAN LAndscape](https://www.theverge.com/2019/3/19/18272602/ai-art-generation-gan-nvidia-doodle-landscapes)
 - [YOLOv3](https://pjreddie.com/darknet/yolo/)
-- [Google Deep Leanring Containers](https://cloud.google.com/ai-platform/deep-learning-containers/docs/getting-started-local)
+- [Google Deep Learning Containers](https://cloud.google.com/ai-platform/deep-learning-containers/docs/getting-started-local)
 - Explainable Machine Learning plugin for Tensorflow by Chris Anderson [Beholder](https://github.com/chrisranderson/beholder)
