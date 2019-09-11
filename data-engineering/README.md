@@ -26,3 +26,4 @@
 - [Google Deep Learning Containers](https://cloud.google.com/ai-platform/deep-learning-containers/docs/getting-started-local)
 - Explainable Machine Learning plugin for Tensorflow by Chris Anderson [Beholder](https://github.com/chrisranderson/beholder)
 - CNN in Google Sheets [CNN](https://docs.google.com/spreadsheets/d/1SwfVctd4TjdN2S8BL09ktpQN_41sARYzD3NEHyr-8Z0/edit?usp=sharing) for this [blog](https://towardsdatascience.com/building-a-deep-neural-net-in-google-sheets-49cdaf466da0)
+- [Scikit Learn Model Selection Flowchart](https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html)
