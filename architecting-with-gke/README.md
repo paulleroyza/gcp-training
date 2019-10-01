@@ -6,3 +6,4 @@
 - [Kubernetes from scratch by Kelsey Hightower](https://github.com/kelseyhightower/kubernetes-the-hard-way)
 - [Medium post on fully private clusters](https://medium.com/google-cloud/completely-private-gke-clusters-with-no-internet-connectivity-945fffae1ccd). Slightly outdated as some of the underlying technology has been updated to be included within GKE.
 - [Google post on private clusters](https://cloud.google.com/kubernetes-engine/docs/how-to/private-clusters). Some of the updates to the previous blog can be found here.
+- [Confluence on running Kafka in Kubernetes](https://www.confluent.io/blog/apache-kafka-kubernetes-could-you-should-you)
