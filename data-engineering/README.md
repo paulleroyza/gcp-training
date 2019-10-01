@@ -31,3 +31,4 @@
 - [Spotify's Road to the Cloud, Kafka to Pubsub Part 2](https://labs.spotify.com/2016/03/03/spotifys-event-delivery-the-road-to-the-cloud-part-ii/)
 - [Spotify's Road to the Cloud, Kafka to Pubsub Part 3](https://labs.spotify.com/2016/03/10/spotifys-event-delivery-the-road-to-the-cloud-part-iii/)
 - [Spark on Kubernetes](https://spark.apache.org/docs/latest/running-on-kubernetes.html)
+- [Parameterized Notebooks](https://github.com/nteract/papermill)
