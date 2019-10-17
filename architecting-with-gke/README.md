@@ -10,3 +10,4 @@
 - [Spark on Kubernetes](https://spark.apache.org/docs/latest/running-on-kubernetes.html)
 - [Securing Docker with runsc/gVisor](https://github.com/google/gvisor)
 - [Windows Pods](https://cloud.google.com/blog/products/containers-kubernetes/how-to-deploy-a-windows-container-on-google-kubernetes-engine)
+- [Location of the stable helm charts if you want to edit them](https://github.com/helm/charts)
