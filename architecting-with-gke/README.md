@@ -12,3 +12,4 @@
 - [Windows Pods](https://cloud.google.com/blog/products/containers-kubernetes/how-to-deploy-a-windows-container-on-google-kubernetes-engine)
 - Location of the [stable helm charts](https://github.com/helm/charts) if you want to edit them or create your own
 - [Skaffold](https://skaffold.dev/) Automated deployment of code to kubernetes for rapid dev cycle. This has both a production `skaffold run` variant as well as a rapid dev focused `skaffold dev` option.
+- Using Hashicorp's [Vault with GKE Demo](https://github.com/GoogleCloudPlatform/gke-vault-demo) and [Codelab](https://codelabs.developers.google.com/codelabs/vault-on-gke/index.html)
