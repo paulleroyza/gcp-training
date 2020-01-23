@@ -42,17 +42,40 @@ gcloud iam service-accounts keys create service_account.json \
 gcloud projects add-iam-policy-binding $PROJECT \
   --member serviceAccount:terraform@${PROJECT}.iam.gserviceaccount.com \
   --role roles/editor
-  
-#get skeleton files
+
+#Create skeleton files
+cat >provider.tf <<EOL
+provider "google" {
+  credentials = file("service_account.json")
+  project     = "$PROJECT"
+  version = ">= 2.5.1"
+}
+
+// Version Check
+terraform {
+  required_version = ">= 0.12.6"
+}
+EOL
+cat >backend.tf <<EOL
+terraform {
+  backend "gcs" {
+    bucket  = "$BUCKET"
+    prefix  = "terraform/state"
+  }
+}
+EOL
+cat >cloudbuild.yaml <<EOL
+steps:
+- name: 'gcr.io/${PROJECT_ID}/terraform'
+  args: ['init']
+- name: 'gcr.io/${PROJECT_ID}/terraform'
+  args: ['apply','-auto-approve']
+EOL
 gsutil cp gs://website.demo.leroy.global/provider.tf ./
 gsutil cp gs://website.demo.leroy.global/backend.tf ./
 gsutil cp gs://website.demo.leroy.global/cloudbuild.yaml ./
 
 gsutil mb gs://$BUCKET
-
-#change skeleton values to our project
-sed -i "s/PROJECT/$PROJECT/g" provider.tf
-sed -i "s/BUCKET/$BUCKET/g" backend.tf
 
 #create cloud build trigger
 gcloud beta builds triggers create cloud-source-repositories \
