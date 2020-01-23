@@ -38,6 +38,11 @@ cd terraform
 gcloud iam service-accounts keys create service_account.json \
   --iam-account terraform@${PROJECT}.iam.gserviceaccount.com
 
+#give sa editor role
+gcloud projects add-iam-policy-binding $PROJECT \
+  --member serviceAccount:terraform@${PROJECT}.iam.gserviceaccount.com \
+  --role roles/editor
+  
 #get skeleton files
 gsutil cp gs://website.demo.leroy.global/provider.tf ./
 gsutil cp gs://website.demo.leroy.global/backend.tf ./
