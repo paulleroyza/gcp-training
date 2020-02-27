@@ -17,7 +17,7 @@ The instructor can set up a subset of the data (the full datat set is 112M recor
 CREATE OR REPLACE TABLE
   Demo.stage1 AS
 SELECT
-  sha512(CONCAT(CAST(pickup_datetime AS string),CAST(dropoff_datetime AS string))) AS trip_id,
+  sha512(CONCAT(CAST(pickup_datetime AS string),CAST(dropoff_datetime AS string))) AS trip_id, #can this be better? Maybe use UUID?
   pickup_datetime,
   dropoff_datetime,
   passenger_count,
@@ -31,32 +31,59 @@ LIMIT
   1000000
 ```
 
-Now split the pickup and dropoff into two separate rows so the student can learn to rebuild the data into arrays of sructs.
+UUID Option, should get unique id's per trip.
+
+```sql
+CREATE OR REPLACE TABLE
+  Demo.stage1 AS
+SELECT
+  GENERATE_UUID() AS trip_id,
+  pickup_datetime,
+  dropoff_datetime,
+  passenger_count,
+  rate_code,
+  pickup_location_id,
+  dropoff_location_id,
+  fare_amount
+FROM
+  `bigquery-public-data.new_york_taxi_trips.tlc_yellow_trips_2018`
+LIMIT
+  1000000
+```
+
+Now split the pickup and dropoff into two separate rows so the student can learn to rebuild the data into arrays of sructs. I've randomized the table order to make EDA a bit more interesting.
 
 ```sql
 CREATE OR REPLACE TABLE
   Demo.taxi_lab AS (
   SELECT
-    trip_id,
-    "Pickup" AS type,
-    pickup_datetime AS event_datetime,
-    passenger_count,
-    NULL AS rate_code,
-    pickup_location_id AS location_id,
-    NULL AS fare_amount
-  FROM
-    Demo.stage1
-  UNION ALL
-  SELECT
-    trip_id,
-    "Dropoff" AS type,
-    dropoff_datetime AS event_datetime,
-    NULL AS passenger_count,
-    rate_code,
-    dropoff_location_id AS location_id,
-    fare_amount
-  FROM
-    Demo.stage1 )
+    * EXCEPT (orderby)
+  FROM (
+    SELECT
+      trip_id,
+      "Pickup" AS type,
+      pickup_datetime AS event_datetime,
+      passenger_count,
+      NULL AS rate_code,
+      pickup_location_id AS location_id,
+      NULL AS fare_amount,
+      rand() AS orderby
+    FROM
+      Demo.stage1
+    UNION ALL
+    SELECT
+      trip_id,
+      "Dropoff" AS type,
+      dropoff_datetime AS event_datetime,
+      NULL AS passenger_count,
+      rate_code,
+      dropoff_location_id AS location_id,
+      fare_amount,
+      rand() AS orderby
+    FROM
+      Demo.stage1
+    ORDER BY
+      orderby))
 ```
 
 ## Demonstrations and labs
@@ -131,12 +158,15 @@ Now we'll enrich the taxi data with the location geometries. To do this join the
 ```sql
 SELECT
   trip_id,
-  MAX(passenger_count),
-  MAX(rate_code),
-  MAX(fare_amount),
+  MAX(passenger_count) AS passenger_count,
+  MAX(rate_code) AS rate_code,
+  MAX(fare_amount) AS fare_amount,
   ARRAY_AGG(STRUCT(type,
       datetime,
-      geom))
+      geom)) AS event,
+  ARRAY_LENGTH(ARRAY_AGG(STRUCT(type,
+        datetime,
+        geom)) ) AS limiter
 FROM (
   SELECT
     trip_id,
@@ -156,8 +186,8 @@ FROM (
     l.zone_id=events.location_id )
 GROUP BY
   trip_id
-having 
-  limiter=2 #why this line? Is there something we can do better
+HAVING
+  limiter=2
 ```
 
 ### Save the result table
@@ -308,6 +338,93 @@ FROM
   `bigquery-public-data.new_york_taxi_trips.taxi_zone_geom`) select zone_name,hubs from centroids join zones on ST_WITHIN(hubs,zone_geom)
 ```
  
+# Day 2
 
+Find the time in minutes between the first pickup of each day of the week and the second pickup. You should have a list of the first two pickups per day and the time between them. This demostrates the partition and navigation functions.
 
+```sql
+  # find the time in minutes between the first pickup of each day of the week and the second pickup. You should have a list of the first two pickups per day and the time between them.
+WITH
+  dataset AS (
+  SELECT
+    cast(pickup_datetime as time) as pickup_time,
+    EXTRACT(DAYOFWEEK
+    FROM
+      pickup_datetime) AS weekday
+  FROM
+    `qwiklabs-gcp-00-8f2599fbb070.Demo.stage1` )
+SELECT
+  distinct weekday,
+  earliest_pickup,
+  nth_pickup,
+  CAST(
+    CEILING(
+      CAST(
+        TIME_DIFF(pickup_time,earliest_pickup,second) AS float64
+      )/60) AS int64) AS delta_in_minutes
+FROM (
+  SELECT
+    weekday,
+    pickup_time,
+    FIRST_VALUE(pickup_time) OVER (PARTITION BY weekday ORDER BY pickup_time ASC ) AS earliest_pickup,
+    NTH_VALUE(pickup_time,20) OVER (PARTITION BY weekday ORDER BY pickup_time  ASC ) AS nth_pickup
+  FROM
+    dataset )
+WHERE
+  pickup_time>=earliest_pickup and
+  pickup_time<=nth_pickup
+```
+
+```sql
+# find the first five trips on each day
+WITH
+  dataset AS (
+  SELECT
+    cast(pickup_datetime as time) as pickup_time,
+    EXTRACT(DAYOFWEEK
+    FROM
+      pickup_datetime) AS weekday
+  FROM
+    `qwiklabs-gcp-00-8f2599fbb070.Demo.stage1` )
+SELECT
+weekday,pickup_time
+FROM (
+  SELECT
+    weekday,
+    pickup_time,
+    ROW_NUMBER() OVER (PARTITION BY weekday ORDER BY pickup_time  ASC ) AS rownum
+  FROM
+    dataset ) where rownum<=5
+```
+
+```sql
+WITH
+  dataset AS (
+  SELECT
+    CAST(pickup_datetime AS time) AS pickup_time,
+    EXTRACT(DAYOFWEEK
+    FROM
+      pickup_datetime) AS weekday
+  FROM
+    `qwiklabs-gcp-00-8f2599fbb070.Demo.stage1` )
+SELECT
+  weekday,
+  pickup_time,
+  COUNT(*) AS pickups
+FROM (
+  SELECT
+    weekday,
+    pickup_time,
+    ROW_NUMBER() OVER (PARTITION BY weekday ORDER BY pickup_time ASC ) AS rownum
+  FROM
+    dataset )
+WHERE
+  rownum<=500
+GROUP BY
+  weekday,
+  pickup_time
+ORDER BY
+  pickups DESC,
+  weekday
+```
 
