@@ -14,3 +14,4 @@
 - [Skaffold](https://skaffold.dev/) Automated deployment of code to kubernetes for rapid dev cycle. This has both a production `skaffold run` variant as well as a rapid dev focused `skaffold dev` option.
 - Using Hashicorp's [Vault with GKE Demo](https://github.com/GoogleCloudPlatform/gke-vault-demo) and [Codelab](https://codelabs.developers.google.com/codelabs/vault-on-gke/index.html)
 - [12 factorness](https://12factor.net/) for microservices and software-as-a-service applications
+- [Kubernetes Icons](https://github.com/kubernetes/community/tree/master/icons) so you can draw your own diagrams of the kubernetes flow
