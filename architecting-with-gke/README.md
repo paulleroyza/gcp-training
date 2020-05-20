@@ -15,3 +15,6 @@
 - Using Hashicorp's [Vault with GKE Demo](https://github.com/GoogleCloudPlatform/gke-vault-demo) and [Codelab](https://codelabs.developers.google.com/codelabs/vault-on-gke/index.html)
 - [12 factorness](https://12factor.net/) for microservices and software-as-a-service applications
 - [Kubernetes Icons](https://github.com/kubernetes/community/tree/master/icons) so you can draw your own diagrams of the kubernetes flow
+- [Security Attack Profile](https://www.schneier.com/blog/archives/2020/04/kubernetes_secu.html)
+- [Nice Tutorial series from Jon Campos](https://github.com/jonbcampos/kubernetes-series)
+- [Anthos on AWS](https://techcrunch.com/2020/04/22/google-clouds-fully-managed-anthos-is-now-generally-available-for-aws/) GA notification
