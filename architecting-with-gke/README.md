@@ -18,3 +18,8 @@
 - [Security Attack Profile](https://www.schneier.com/blog/archives/2020/04/kubernetes_secu.html)
 - [Nice Tutorial series from Jon Campos](https://github.com/jonbcampos/kubernetes-series)
 - [Anthos on AWS](https://techcrunch.com/2020/04/22/google-clouds-fully-managed-anthos-is-now-generally-available-for-aws/) GA notification
+- [Anthos Cloud City Video](https://showcase.withgoogle.com/demo/cloud-city)
+- [Deploy Any Resource With The New Kubernetes Provider for HashiCorp Terraform](https://www.hashicorp.com/blog/deploy-any-resource-with-the-new-kubernetes-provider-for-hashicorp-terraform/)
+- [7 Key Considerations for Kubernetes in Production](https://www.tigera.io/blog/7-key-considerations-for-kubernetes-in-production/)
+- [Kubernetes deployments: 6 security best practices](https://enterprisersproject.com/article/2020/5/kubernetes-deployments-6-security-best-practices)
+- [vSphere 7 with Kubernetes Network Service - Part 2](https://www.youtube.com/watch?v=sd-qIemVLvo)

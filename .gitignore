@@ -102,3 +102,7 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+terraform-gcp-cicd/backend.tf
+terraform-gcp-cicd/cloudbuild.yaml
+terraform-gcp-cicd/provider.tf

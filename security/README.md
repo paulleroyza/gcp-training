@@ -9,3 +9,7 @@
 - [Beyond Corp Site](https://cloud.google.com/beyondcorp)
 - [Beyond corp tools for endpoints - news](https://venturebeat.com/2020/04/20-google-rolls-out-beyondcorp-for-secure-remote-network-access-without-a-vpn/)
 - [Google Product site for Beyond corp remote control plane](https://cloud.google.com/blog/products/identity-security/keep-your-teams-working-safely-with-beyondcorp-remote-access)
+- [How Kaggle solved a spam problem in 8 days using AutoML](https://cloud.google.com/blog/products/ai-machine-learning/how-kaggle-solved-a-spam-problem-using-automl)
+- [Forseti Security](https://forsetisecurity.org/) Policy management on GCP
+- [Advanced Log Analysis, aggregation and incident management](https://chronicle.security/)
+- [Kubernetes deployments: 6 security best practices](https://enterprisersproject.com/article/2020/5/kubernetes-deployments-6-security-best-practices)

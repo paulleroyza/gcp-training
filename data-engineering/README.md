@@ -41,6 +41,10 @@
 - [BQML Logistic Regression](https://codelabs.developers.google.com/codelabs/bqml-intro/)
 - [BQML Clustering](https://towardsdatascience.com/how-to-use-k-means-clustering-in-bigquery-ml-to-understand-and-describe-your-data-better-c972c6f5733b)
 
+### AutoML
+
+- [How Kaggle solved a spam problem in 8 days using AutoML](https://cloud.google.com/blog/products/ai-machine-learning/how-kaggle-solved-a-spam-problem-using-automl)
+
 ## Machine Learning Engineering
 
 ### Books
