@@ -14,4 +14,3 @@
 - [Advanced Log Analysis, aggregation and incident management](https://chronicle.security/) Backstory, log consolidation and search at Google scale.
 - [Kubernetes deployments: 6 security best practices](https://enterprisersproject.com/article/2020/5/kubernetes-deployments-6-security-best-practices)
 - [Always consider the path of least resistance](https://xkcd.com/538/) Evaluate the cost of an attack and re-evaluate once you know the alternatives.
-- [Least Cost Path of Security](https://xkcd.com/538/)
