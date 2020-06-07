@@ -11,7 +11,7 @@ sleep 20
 FOLDER=cloud-builders-community
 URL=https://github.com/GoogleCloudPlatform/cloud-builders-community.git
 PROJECT=$(gcloud config list --format="value(core.project)")
-TF_VER=$(curl https://www.terraform.io/downloads.html | grep -E -o '\s0\.[[:digit:]]{1,2}\.[[:digit:]]{1,2}' | sed 's/ //g')
+TF_VER=$(curl https://www.terraform.io/downloads.html | sed -n 's/.*\s\(0\.[0-9]\{1,2\}\.[0-9]\{1,2\}\)\.*/\1/p')
 CUR_VER=$(gcloud container images list-tags gcr.io/$PROJECT/terraform \
 	--format="value(TAGS)"| grep latest | grep -o -E '[[:digit:]]{1}\.[[:digit:]]{1,2}\.[[:digit:]]{1,2}')
 BUCKET=${PROJECT}-terraform
@@ -46,7 +46,7 @@ gcloud projects add-iam-policy-binding $PROJECT \
 #Create skeleton files
 cat >provider.tf <<EOL
 provider "google" {
-  credentials = file("service_account.json")
+  //credentials = file("service_account.json")
   project     = "$PROJECT"
   version = ">= 2.5.1"
 }
