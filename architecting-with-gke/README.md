@@ -23,3 +23,4 @@
 - [7 Key Considerations for Kubernetes in Production](https://www.tigera.io/blog/7-key-considerations-for-kubernetes-in-production/)
 - [Kubernetes deployments: 6 security best practices](https://enterprisersproject.com/article/2020/5/kubernetes-deployments-6-security-best-practices)
 - [vSphere 7 with Kubernetes Network Service - Part 2](https://www.youtube.com/watch?v=sd-qIemVLvo)
+- [Kubernetes native Dockerfile builder](https://github.com/GoogleContainerTools/kaniko)
