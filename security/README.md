@@ -15,3 +15,4 @@
 - [Kubernetes deployments: 6 security best practices](https://enterprisersproject.com/article/2020/5/kubernetes-deployments-6-security-best-practices)
 - [Always consider the path of least resistance](https://xkcd.com/538/) Evaluate the cost of an attack and re-evaluate once you know the alternatives.
 - [IoT Security](https://www.schneier.com/blog/archives/2020/07/half_a_million.html) "Telnet? Default passwords? In 2020?"
+- [Live stream of Committed Secrets in git](https://shhgit.darkport.co.uk/)
