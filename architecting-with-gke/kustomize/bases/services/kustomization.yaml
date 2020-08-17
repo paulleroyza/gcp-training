@@ -1,0 +1,6 @@
+resources:
+- cluster_ip.yaml
+- nodeport.yaml
+- loadbalancer.yaml
+- internal_loadbalancer.yaml
+- ingress.yaml

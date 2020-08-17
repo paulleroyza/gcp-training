@@ -1,0 +1,16 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: development
+commonLabels:
+  someName: someValue
+  owner: alice
+  app: bingo
+  
+commonAnnotations:
+  oncallPager: 800-555-1212
+
+bases:
+- ../../bases
+
+resources:
+- namespace.yaml

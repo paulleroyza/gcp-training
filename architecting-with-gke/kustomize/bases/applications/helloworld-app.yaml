@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: pyserver
+  name: pyserver
+spec:
+  strategy:
+    rollingUpdate:
+      maxSurge: 5
+      maxUnavailable: 0
+    type: RollingUpdate
+  replicas: 3
+  selector:
+    matchLabels:
+      app: pyserver
+  template:
+    metadata:
+      labels:
+        app: pyserver
+    spec:
+      containers:
+      - image: gcr.io/paul-leroy/pyserver:remote
+        imagePullPolicy: Always
+        name: pyserver
