@@ -24,3 +24,5 @@
 - [Kubernetes deployments: 6 security best practices](https://enterprisersproject.com/article/2020/5/kubernetes-deployments-6-security-best-practices)
 - [vSphere 7 with Kubernetes Network Service - Part 2](https://www.youtube.com/watch?v=sd-qIemVLvo)
 - [Kubernetes native Dockerfile builder](https://github.com/GoogleContainerTools/kaniko)
+- [Hardening your GKE Cluster](https://cloud.google.com/kubernetes-engine/docs/how-to/hardening-your-cluster)
+- [Limiting the range policies](https://kubernetes.io/docs/concepts/policy/limit-range/) Making sure your pods only get what they are allowed, nothing more
