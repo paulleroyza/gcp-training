@@ -26,3 +26,4 @@
 - [Kubernetes native Dockerfile builder](https://github.com/GoogleContainerTools/kaniko)
 - [Hardening your GKE Cluster](https://cloud.google.com/kubernetes-engine/docs/how-to/hardening-your-cluster)
 - [Limiting the range policies](https://kubernetes.io/docs/concepts/policy/limit-range/) Making sure your pods only get what they are allowed, nothing more
+- [How does kubctl exec work](https://erkanerol.github.io/post/how-kubectl-exec-works/)
