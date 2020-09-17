@@ -30,3 +30,7 @@
 - [Managed SSL Certs for Kubernetes](https://cloud.google.com/kubernetes-engine/docs/how-to/managed-certs#setting_up_the_managed_certificate)
 - [CRDs or Config Maps](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/)
 - [CSI vs PVC](https://cloud.google.com/kubernetes-engine/docs/how-to/persistent-volumes/gce-pd-csi-driver)
+- [Other Service Meshes](https://docs.traefik.io/)
+- [Envoy Proxy, the one inside Istio](https://www.envoyproxy.io/)
+- [Hashicorp's Service Mesh](https://www.consul.io/)
+- [The CNCF landscape](https://landscape.cncf.io/)
