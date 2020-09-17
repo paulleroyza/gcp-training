@@ -26,5 +26,6 @@
 - [Beyond Corp Remote Access](https://cloud.google.com/solutions/beyondcorp-remote-access)
 - [Similar names to your Domain](https://dnstwister.report/)
 - [DLP API InfoTypes](https://cloud.google.com/dlp/docs/infotypes-reference) and [Demo](https://cloud.google.com/dlp/demo/#!/)
-- []Blue Medora Bindplane integration into Cloud Operations Logging](https://cloud.google.com/blog/products/management-tools/use-bluemedoras-bindplane-with-google-cloud)
-[The NSA on the Risks of Exposing Location Data](https://www.schneier.com/blog/archives/2020/08/the_nsa_on_the_.html)
+- [Blue Medora Bindplane integration into Cloud Operations Logging](https://cloud.google.com/blog/products/management-tools/use-bluemedoras-bindplane-with-google-cloud)
+- [The NSA on the Risks of Exposing Location Data](https://www.schneier.com/blog/archives/2020/08/the_nsa_on_the_.html)
+- [Imapct of Ransomware](http://rss.slashdot.org/~r/Slashdot/slashdot/~3/Z-0N7yK9ZGs/patient-dies-after-hospital-hit-by-ransomware-attack)

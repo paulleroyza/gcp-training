@@ -27,3 +27,6 @@
 - [Hardening your GKE Cluster](https://cloud.google.com/kubernetes-engine/docs/how-to/hardening-your-cluster)
 - [Limiting the range policies](https://kubernetes.io/docs/concepts/policy/limit-range/) Making sure your pods only get what they are allowed, nothing more
 - [How does kubctl exec work](https://erkanerol.github.io/post/how-kubectl-exec-works/)
+- [Managed SSL Certs for Kubernetes](https://cloud.google.com/kubernetes-engine/docs/how-to/managed-certs#setting_up_the_managed_certificate)
+- [CRDs or Config Maps](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/)
+- [CSI vs PVC](https://cloud.google.com/kubernetes-engine/docs/how-to/persistent-volumes/gce-pd-csi-driver)
