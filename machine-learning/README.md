@@ -8,3 +8,4 @@
 - [Post on splitting an autoencoder by using a stacked model](https://stackoverflow.com/questions/48603328/how-do-i-split-an-convolutional-autoencoder)
 - [Lak's Medium Posts](https://medium.com/@lakshmanok)
 - [TWiGCP](https://medium.com/google-cloud/weekly/home)
+- Using ML to translate Heiroglyphics, just kidding, to build better games like [Assassin's Creed](https://cloud.google.com/customers/ubisoft)
