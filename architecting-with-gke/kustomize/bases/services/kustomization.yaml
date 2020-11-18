@@ -4,3 +4,6 @@ resources:
 - loadbalancer.yaml
 - internal_loadbalancer.yaml
 - ingress.yaml
+- container-native-neg.yaml
+- container-native-ingress-lb.yaml
+- container-native-ingress-ilb.yaml
