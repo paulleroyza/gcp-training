@@ -87,3 +87,4 @@
 ## Dataflow
 
 - [Java - debugging Out of Memory Errors](https://cloud.google.com/community/tutorials/dataflow-debug-oom-conditions)
+- [Dataflow BigQuery Streaming](https://cloud.google.com/dataflow/docs/samples/join-streaming-data-with-sql)
