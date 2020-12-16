@@ -3,15 +3,15 @@ kind: Ingress
 metadata:
   name: pyserver-ingress
 spec:
-#  #backend:
-#  #  serviceName: pyserver-nodeport
-#  #  servicePort: 8080
-  rules:
-  - http:
-      paths:
-      - path: /*
-        backend:
-          serviceName: pyserver-nodeport
-          servicePort: 8080
+  backend:
+    serviceName: pyserver-nodeport
+    servicePort: 8080
+  #rules:
+  #- http:
+  #    paths:
+  #    - path: /*
+  #      backend:
+  #        serviceName: pyserver-nodeport
+  #        servicePort: 8080
 
     

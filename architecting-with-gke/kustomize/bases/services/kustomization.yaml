@@ -1,9 +1,10 @@
 resources:
-- cluster_ip.yaml
-- nodeport.yaml
-- loadbalancer.yaml
-- internal_loadbalancer.yaml
-- ingress.yaml
-- container-native-neg.yaml
-- container-native-ingress-lb.yaml
-- container-native-ingress-ilb.yaml
+#- cluster_ip.yaml
+#- nodeport.yaml
+#- loadbalancer.yaml
+#- internal_loadbalancer.yaml
+#- internal_loadbalancer_global.yaml
+#- ingress.yaml
+#- container-native-neg.yaml
+#- container-native-ingress-lb.yaml
+#- container-native-ingress-ilb.yaml
