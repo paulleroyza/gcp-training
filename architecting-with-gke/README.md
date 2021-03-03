@@ -6,7 +6,7 @@
 - [Kubernetes from scratch by Kelsey Hightower](https://github.com/kelseyhightower/kubernetes-the-hard-way)
 - [Medium post on fully private clusters](https://medium.com/google-cloud/completely-private-gke-clusters-with-no-internet-connectivity-945fffae1ccd). Slightly outdated as some of the underlying technology has been updated to be included within GKE.
 - [Google post on private clusters](https://cloud.google.com/kubernetes-engine/docs/how-to/private-clusters). Some of the updates to the previous blog can be found here.
-- Confluence on running [Kafka in Kubernetes](https://www.confluent.io/blog/apache-kafka-kubernetes-could-you-should-you)
+- Confluent on running [Kafka in Kubernetes](https://www.confluent.io/blog/apache-kafka-kubernetes-could-you-should-you)
 - [Spark on Kubernetes](https://spark.apache.org/docs/latest/running-on-kubernetes.html)
 - Securing Docker with [runsc/gVisor](https://github.com/google/gvisor). This takes a bit of work to run on a mac but nice to put through its paces.
 - [Windows Pods](https://cloud.google.com/blog/products/containers-kubernetes/how-to-deploy-a-windows-container-on-google-kubernetes-engine)
@@ -23,3 +23,20 @@
 - [7 Key Considerations for Kubernetes in Production](https://www.tigera.io/blog/7-key-considerations-for-kubernetes-in-production/)
 - [Kubernetes deployments: 6 security best practices](https://enterprisersproject.com/article/2020/5/kubernetes-deployments-6-security-best-practices)
 - [vSphere 7 with Kubernetes Network Service - Part 2](https://www.youtube.com/watch?v=sd-qIemVLvo)
+- [Kubernetes native Dockerfile builder](https://github.com/GoogleContainerTools/kaniko)
+- [Hardening your GKE Cluster](https://cloud.google.com/kubernetes-engine/docs/how-to/hardening-your-cluster)
+- [Limiting the range policies](https://kubernetes.io/docs/concepts/policy/limit-range/) Making sure your pods only get what they are allowed, nothing more
+- [How does kubctl exec work](https://erkanerol.github.io/post/how-kubectl-exec-works/)
+- [Managed SSL Certs for Kubernetes](https://cloud.google.com/kubernetes-engine/docs/how-to/managed-certs#setting_up_the_managed_certificate)
+- [CRDs or Config Maps](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/)
+- [CSI vs PVC](https://cloud.google.com/kubernetes-engine/docs/how-to/persistent-volumes/gce-pd-csi-driver)
+- [Other Service Meshes](https://docs.traefik.io/)
+- [Envoy Proxy, the one inside Istio](https://www.envoyproxy.io/)
+- [Hashicorp's Service Mesh](https://www.consul.io/)
+- [The CNCF landscape](https://landscape.cncf.io/)
+- [NGINX Service MEsh](https://www.nginx.com/blog/introducing-nginx-service-mesh/)
+- [Zero Downtime Kubernetes deployments](https://sbg.technology/2020/08/21/zero-downtime-kubernetes-deployments/)
+- [Kubernetes Terminating with Grace](https://cloud.google.com/blog/products/gcp/kubernetes-best-practices-terminating-with-grace)
+- [preStop Hooks](https://blog.gruntwork.io/gracefully-shutting-down-pods-in-a-kubernetes-cluster-328aecec90d)
+- [Graceful shutdown from kubectl](https://pracucci.com/graceful-shutdown-of-kubernetes-pods.html)
+- [Comparion of 9 Service Meshs](https://techbeacon.com/app-dev-testing/9-open-source-service-meshes-compared)

@@ -1,0 +1,8 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: pyserver-cnlb-ingress
+spec:
+  backend:
+    serviceName: pyserver-neg
+    servicePort: 8080
