@@ -10,3 +10,5 @@
 - [ML is out of whack because of Covid](https://www.theregister.com/2020/06/23/covid19_pandemic_means_data_from/) and I always used Brexit as an inflection point
 - [Maths of ML](https://towardsdatascience.com/the-roadmap-of-mathematics-for-deep-learning-357b3db8569b)
 - [Language information tool](https://syncedreview.com/2020/08/17/google-introduces-nlp-model-understanding-tool/)
+- [This Cat Does Not Exist](https://thiscatdoesnotexist.com/) either 
+- [AI Generated Idols in Japan](https://gene-aidols.io/)
