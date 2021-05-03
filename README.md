@@ -9,3 +9,4 @@
 - [Google Certified Professional Network Engineer](https://github.com/paulleroyza/gcp-training/tree/master/network)
 - [Google Certified Professional Application Developer](https://github.com/paulleroyza/gcp-training/tree/master/developing-apps)
 - [Google Certified Professional Machine Learning Engineer](https://github.com/paulleroyza/gcp-training/tree/master/machine-learning)
+- [Google Core Infrastructure Links](https://github.com/paulleroyza/gcp-training/tree/master/core-infrastructure)
