@@ -21,3 +21,8 @@
 ### Org Hierarchy
 
 - [Organization best practices](https://cloud.google.com/docs/enterprise/best-practices-for-enterprise-organizations)
+
+### Interacting with the Cloud
+
+- [Google Cloud App](https://cloud.google.com/console-app)
+- [API Explorer](https://developers.google.com/apis-explorer)
