@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 # Machine Learning Engineering
 
 - [TPU News](https://venturebeat.com/2019/05/07/google-cloud-makes-1000-tpu-chip-pods-available-in-public-beta/)
@@ -15,4 +12,3 @@
 - [Language information tool](https://syncedreview.com/2020/08/17/google-introduces-nlp-model-understanding-tool/)
 - [This Cat Does Not Exist](https://thiscatdoesnotexist.com/) either 
 - [AI Generated Idols in Japan](https://gene-aidols.io/)
->>>>>>> origin/master
