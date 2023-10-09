@@ -6,3 +6,4 @@
 - [IP over Avian Carriers](https://tools.ietf.org/html/rfc2549) and the implementation by the [University of Bergen](https://tools.ietf.org/html/rfc2549)
 - Kinsta on the performance improvement going from [N1 to C2 instances](https://kinsta.com/feature-updates/google-cloud-platform-c2-vms/)
 - [IAP on AppEngine](https://cloud.google.com/iap/docs/app-engine-quickstart)
+- [Lean startup](https://www.google.co.uk/books/edition/The_Lean_Startup/r9x-OXdzpPcC?hl=en) Startup mentality
