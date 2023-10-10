@@ -133,3 +133,6 @@ Neural Network](https://arxiv.org/ftp/arxiv/papers/1908/1908.11553.pdf)
 -[RFC 3339](https://datatracker.ietf.org/doc/html/rfc3339) [Example](https://utcc.utoronto.ca/~cks/space/blog/unix/GNUDateAndRFC3339#:~:text=RFC%203339%20is%20an%20RFC,some%20Prometheus%20tools%20use%20it.)
 - [Streamlining ML development with Feast](https://cloud.google.com/blog/products/databases/how-feast-feature-store-streamlines-ml-development)
 - [Rotary Encoder for BigQuery](https://medium.com/@paulleroy/rotary-encoding-datetime-for-machine-learning-in-bigquery-d60b928b4690)
+
+Gradient Descent
+- [Visualizing Gradient Descent](https://towardsdatascience.com/a-visual-explanation-of-gradient-descent-methods-momentum-adagrad-rmsprop-adam-f898b102325c) and the [repo](https://github.com/lilipads/gradient_descent_viz)
